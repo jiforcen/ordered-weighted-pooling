@@ -1,7 +1,7 @@
 # pooling-layers
 ---
 
-In this repository some custom pooling layers published in the paper *Learning ordered pooling weights in image classification* are implemented in Keras/TensorFlow. Also some useful constraints and regularizers for the given layers are implemented.
+In this repository some custom pooling layers published in the paper **Learning ordered pooling weights in image classification** are implemented in Keras/TensorFlow. Also some useful constraints and regularizers for the given layers are implemented.
 All layers are tested and explained in this documentation.
 
 ## OW1Pooling2D
