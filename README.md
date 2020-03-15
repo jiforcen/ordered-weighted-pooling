@@ -1,10 +1,13 @@
-# pooling-layers
----
+# ordered-weighted-pooling
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## pooling-layers
 
 In this repository some custom pooling layers published in the paper **Learning ordered pooling weights in image classification** are implemented in Keras/TensorFlow. Also some useful constraints and regularizers for the given layers are implemented.
 All layers are tested and explained in this documentation.
 
-## OW1Pooling2D
+### OW1Pooling2D
 
 ```
 pooling_layers.OW1Pooling2D(pool_size=(2, 2), strides=None, padding='valid',data_format=None, weights_initializer='ow_avg', weights_regularizer=None, weights_constraint=None, weights_op='None')
@@ -35,7 +38,7 @@ Ordered Weighted Average Pooling operation for spatial data. For each pooling re
 * weights_shape = [pool_size[0] * pool_size[1]]
 
 
-## OW2Pooling2D
+### OW2Pooling2D
 
 ```
 pooling_layers.OW2Pooling2D(pool_size=(2, 2), strides=None, padding='valid',data_format=None, weights_initializer='ow_avg', weights_regularizer=None, weights_constraint=None, weights_op='None')
@@ -46,7 +49,7 @@ Similar to OW1Pooling2D, but in this case one set of weights is learned for each
 
 * weights_shape = [channels, pool_size[0] * pool_size[1]]
 
-## OW3Pooling2D
+### OW3Pooling2D
 
 ```
 pooling_layers.OW3Pooling2D(pool_size=(2, 2), strides=None, padding='valid',data_format=None, weights_initializer='ow_avg', weights_regularizer=None, weights_constraint=None, weights_op='None')
@@ -58,7 +61,7 @@ Similar to OW1Pooling2D and OW2Pooling2D, but in OW3Pooling2D one set of weights
 * weights_shape = [pooled_rows, pooled_cols, channels, pool_size[0] * pool_size[1]]
 
 
-# Constraints
+## Constraints
 ---
 ```
 ow_constraints.PosUnitModule(rate=1.0, axis=0)
@@ -77,7 +80,7 @@ Constrains the weights to sum one and to have positive values. This constraint i
 
 
 
-# Testing
+## Testing
 ---
 
 In order to check the correct behavior of the previous implementations some unit tests were implemented. You can check it with the next command:
