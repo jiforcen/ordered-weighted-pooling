@@ -2,10 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## pooling-layers
-
 In this repository some custom pooling layers published in the paper **Learning ordered pooling weights in image classification** are implemented in Keras/TensorFlow. Also some useful constraints and regularizers for the given layers are implemented.
-All layers are tested and explained in this documentation.
+All layers are tested and explained in this repository.
+
+## pooling-layers
 
 ### OW1Pooling2D
 
